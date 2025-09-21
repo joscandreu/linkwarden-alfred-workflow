@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.joscandreu.linkwardenworkflow</string>
+	<key>category</key>
+	<string>Internet</string>
+	<key>connections</key>
+	<dict>
+		<key>3E2B4F2E-8B5A-4C8E-9A12-1234567890AB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4F3C5D7E-9C6A-4D9F-8B23-2345678901BC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5A6B7C8D-1E2F-3A4B-5C6D-3456789012CD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>6B7C8D9E-2F3A-4B5C-6D7E-4567890123DE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7C8D9E0F-3A4B-5C6D-7E8F-5678901234EF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D9E0F1A-4B5C-6D7E-8F9A-6789012345FA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8D9E0F1A-4B5C-6D7E-8F9A-6789012345FA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B2C3D4E5-6F7A-8B9C-0D1E-2345678901FA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>joscandreu</string>
+	<key>description</key>
+	<string>Search, browse, and save links to your Linkwarden instance</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Linkwarden</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>lw</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching Linkwarden...</string>
+				<key>script</key>
+				<string>#!/bin/bash
+python3 linkwarden_search.py "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search your Linkwarden links by content, tags, or collections</string>
+				<key>title</key>
+				<string>Search Linkwarden</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>3E2B4F2E-8B5A-4C8E-9A12-1234567890AB</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>4F3C5D7E-9C6A-4D9F-8B23-2345678901BC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>lwc</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading collections...</string>
+				<key>script</key>
+				<string>#!/bin/bash
+python3 linkwarden_collections.py "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Browse your Linkwarden collections</string>
+				<key>title</key>
+				<string>Browse Collections</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>5A6B7C8D-1E2F-3A4B-5C6D-3456789012CD</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>6B7C8D9E-2F3A-4B5C-6D7E-4567890123DE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>lws</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Preparing to save...</string>
+				<key>script</key>
+				<string>#!/bin/bash
+python3 linkwarden_save.py "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Save a link to Linkwarden with tags and collections</string>
+				<key>title</key>
+				<string>Save Link</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7C8D9E0F-3A4B-5C6D-7E8F-5678901234EF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+python3 linkwarden_save_action.py "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>8D9E0F1A-4B5C-6D7E-8F9A-6789012345FA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Bookmark Saved!</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>B2C3D4E5-6F7A-8B9C-0D1E-2345678901FA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>Linkwarden Alfred Workflow
+
+Commands:
+- lw [search] - Search all your links with #tags @collections
+- lwc [filter] - Browse collections and their links
+- lws [url] - Save links with enhanced syntax
+
+Enhanced Save Examples:
+- lws example.com #work @dev
+- lws github.com/repo #coding #tutorial
+- Auto-adds https:// if missing
+
+Setup:
+1. Right-click workflow and select "Configure Workflow..."
+2. Set LW_API_URL and LW_API_TOKEN
+3. Start using the enhanced commands
+
+Features:
+- Universal search with #tag @collection syntax
+- Collection browsing with link preview
+- Enhanced save with automatic HTTPS and metadata
+- Tag and collection autocomplete and validation</string>
+	<key>uidata</key>
+	<dict>
+		<key>3E2B4F2E-8B5A-4C8E-9A12-1234567890AB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>4F3C5D7E-9C6A-4D9F-8B23-2345678901BC</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>40</integer>
+		</dict>
+		<key>5A6B7C8D-1E2F-3A4B-5C6D-3456789012CD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+		<key>6B7C8D9E-2F3A-4B5C-6D7E-4567890123DE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>160</integer>
+		</dict>
+		<key>7C8D9E0F-3A4B-5C6D-7E8F-5678901234EF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>40</integer>
+			<key>ypos</key>
+			<integer>280</integer>
+		</dict>
+		<key>8D9E0F1A-4B5C-6D7E-8F9A-6789012345FA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>300</integer>
+			<key>ypos</key>
+			<integer>280</integer>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>LW_API_URL</key>
+		<string></string>
+		<key>LW_API_TOKEN</key>
+		<string></string>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>https://</string>
+				<key>placeholder</key>
+				<string>https://linkwarden.example.com</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Your Linkwarden instance URL (without /api/v1)</string>
+			<key>label</key>
+			<string>Linkwarden URL</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>LW_API_URL</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>placeholder</key>
+				<string>Enter your API token from Linkwarden Settings</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>API token from Linkwarden Settings → Access Tokens</string>
+			<key>label</key>
+			<string>API Token</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>LW_API_TOKEN</string>
+		</dict>
+	</array>
+	<key>variablesdontexport</key>
+	<array>
+		<string>LW_API_TOKEN</string>
+	</array>
+	<key>version</key>
+	<string>1.0.0</string>
+	<key>webaddress</key>
+	<string>https://github.com/joscandreu/linkwarden-alfred-workflow</string>
+</dict>
+</plist>
